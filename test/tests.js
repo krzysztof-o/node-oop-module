@@ -48,7 +48,22 @@ describe('instance of class A', function() {
 	});
 });
 
+describe('instances of class A', function() {
+	before(function() {
+		A = oop.class('./A');
+		a1 = new A();
+		a2 = new A();
+	});
+	after(function() {
+		A = null;
+		a1 = null;
+		a2 = null;
+	});
 
+	it('should not be equal', function() {
+		assert.notEqual(a1, a2);
+	});
+});
 
 
 
