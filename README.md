@@ -1,4 +1,4 @@
-node-module-oop
+node-oop-module
 ===============
 Node.js library to transform modules into classes.
 ##Instalation
